@@ -187,7 +187,7 @@
                     event.stopPropagation();
                 }
 
-                let fields = form.querySelectorAll('input, select');
+                let fields = form.querySelectorAll('input, select, textarea');
                 let scrollElem = null
                 let is_error = false
                 Array.prototype.filter.call(fields, function(field, index) {
