@@ -60,41 +60,41 @@
     // update default options with the new options
     function updateOptions(defaultOpt, newOpt) {
         if (newOpt.messages) {
-            defaultOpt.messages.valueMissing = newOpt.messages.valueMissing | defaultOpt.messages.valueMissing
-            defaultOpt.messages.tooShort = newOpt.messages.tooShort | defaultOpt.messages.tooShort
-            defaultOpt.messages.tooLong = newOpt.messages.tooLong | defaultOpt.messages.tooLong
-            defaultOpt.messages.badInput = newOpt.messages.badInput | defaultOpt.messages.badInput
-            defaultOpt.messages.stepMismatch = newOpt.messages.stepMismatch | defaultOpt.messages.stepMismatch
-            defaultOpt.messages.rangeOverflow = newOpt.messages.rangeOverflow | defaultOpt.messages.rangeOverflow
-            defaultOpt.messages.rangeUnderflow = newOpt.messages.rangeUnderflow | defaultOpt.messages.rangeUnderflow
-            defaultOpt.messages.patternMismatch = newOpt.messages.patternMismatch | defaultOpt.messages.patternMismatch
-            defaultOpt.messages.general = newOpt.messages.general | defaultOpt.messages.general
+            defaultOpt.messages.valueMissing = newOpt.messages.valueMissing ? newOpt.messages.valueMissing : defaultOpt.messages.valueMissing
+            defaultOpt.messages.tooShort = newOpt.messages.tooShort ? newOpt.messages.tooShort : defaultOpt.messages.tooShort
+            defaultOpt.messages.tooLong = newOpt.messages.tooLong ? newOpt.messages.tooLong : defaultOpt.messages.tooLong
+            defaultOpt.messages.badInput = newOpt.messages.badInput ? newOpt.messages.badInput : defaultOpt.messages.badInput
+            defaultOpt.messages.stepMismatch = newOpt.messages.stepMismatch ? newOpt.messages.stepMismatch : defaultOpt.messages.stepMismatch
+            defaultOpt.messages.rangeOverflow = newOpt.messages.rangeOverflow ? newOpt.messages.rangeOverflow : defaultOpt.messages.rangeOverflow
+            defaultOpt.messages.rangeUnderflow = newOpt.messages.rangeUnderflow ? newOpt.messages.rangeUnderflow : defaultOpt.messages.rangeUnderflow
+            defaultOpt.messages.patternMismatch = newOpt.messages.patternMismatch ? newOpt.messages.patternMismatch : defaultOpt.messages.patternMismatch
+            defaultOpt.messages.general = newOpt.messages.general ? newOpt.messages.general : defaultOpt.messages.general
             
             if (newOpt.messages.typeMismatch) {
-                defaultOpt.messages.typeMismatch.general = newOpt.messages.typeMismatch.general | defaultOpt.messages.typeMismatch.general
-                defaultOpt.messages.typeMismatch.email = newOpt.messages.typeMismatch.email | defaultOpt.messages.typeMismatch.email
-                defaultOpt.messages.typeMismatch.url = newOpt.messages.typeMismatch.url | defaultOpt.messages.typeMismatch.url
+                defaultOpt.messages.typeMismatch.general = newOpt.messages.typeMismatch.general ? newOpt.messages.typeMismatch.general : defaultOpt.messages.typeMismatch.general
+                defaultOpt.messages.typeMismatch.email = newOpt.messages.typeMismatch.email ? newOpt.messages.typeMismatch.email : defaultOpt.messages.typeMismatch.email
+                defaultOpt.messages.typeMismatch.url = newOpt.messages.typeMismatch.url ? newOpt.messages.typeMismatch.url : defaultOpt.messages.typeMismatch.url
             }
         }
 
         if (newOpt.input) {
-            defaultOpt.input.borderInvalid = newOpt.input.borderInvalid | defaultOpt.input.borderInvalid
-            defaultOpt.input.borderValid = newOpt.input.borderValid | defaultOpt.input.borderValid
-            defaultOpt.input.focusInvalid = newOpt.input.focusInvalid | defaultOpt.input.focusInvalid
-            defaultOpt.input.focusValid = newOpt.input.focusValid | defaultOpt.input.focusValid
-            defaultOpt.input.iconInvalid = newOpt.input.iconInvalid | defaultOpt.input.iconInvalid
-            defaultOpt.input.iconValid = newOpt.input.iconValid | defaultOpt.input.iconValid
+            defaultOpt.input.borderInvalid = newOpt.input.borderInvalid ? newOpt.input.borderInvalid : defaultOpt.input.borderInvalid
+            defaultOpt.input.borderValid = newOpt.input.borderValid ? newOpt.input.borderValid : defaultOpt.input.borderValid
+            defaultOpt.input.focusInvalid = newOpt.input.focusInvalid ? newOpt.input.focusInvalid : defaultOpt.input.focusInvalid
+            defaultOpt.input.focusValid = newOpt.input.focusValid ? newOpt.input.focusValid : defaultOpt.input.focusValid
+            defaultOpt.input.iconInvalid = newOpt.input.iconInvalid ? newOpt.input.iconInvalid : defaultOpt.input.iconInvalid
+            defaultOpt.input.iconValid = newOpt.input.iconValid ? newOpt.input.iconValid : defaultOpt.input.iconValid
         }
 
         if (newOpt.messageContainer) {
-            defaultOpt.messageContainer.backgroundInvalid = newOpt.messageContainer.backgroundInvalid | defaultOpt.messageContainer.backgroundInvalid
-            defaultOpt.messageContainer.backgroundValid = newOpt.messageContainer.backgroundValid | defaultOpt.messageContainer.backgroundValid
-            defaultOpt.messageContainer.colorInvalid = newOpt.messageContainer.colorInvalid | defaultOpt.messageContainer.colorInvalid
-            defaultOpt.messageContainer.colorValid = newOpt.messageContainer.colorValid | defaultOpt.messageContainer.colorValid
-            defaultOpt.messageContainer.width = newOpt.messageContainer.width | defaultOpt.messageContainer.width
-            defaultOpt.messageContainer.alignment = newOpt.messageContainer.alignment | defaultOpt.messageContainer.alignment
-            defaultOpt.messageContainer.textAlign = newOpt.messageContainer.textAlign | defaultOpt.messageContainer.textAlign
-            defaultOpt.messageContainer.marginTop = newOpt.messageContainer.marginTop | defaultOpt.messageContainer.marginTop
+            defaultOpt.messageContainer.backgroundInvalid = newOpt.messageContainer.backgroundInvalid ? newOpt.messageContainer.backgroundInvalid : defaultOpt.messageContainer.backgroundInvalid
+            defaultOpt.messageContainer.backgroundValid = newOpt.messageContainer.backgroundValid ? newOpt.messageContainer.backgroundValid : defaultOpt.messageContainer.backgroundValid
+            defaultOpt.messageContainer.colorInvalid = newOpt.messageContainer.colorInvalid ? newOpt.messageContainer.colorInvalid : defaultOpt.messageContainer.colorInvalid
+            defaultOpt.messageContainer.colorValid = newOpt.messageContainer.colorValid ? newOpt.messageContainer.colorValid : defaultOpt.messageContainer.colorValid
+            defaultOpt.messageContainer.width = newOpt.messageContainer.width ? newOpt.messageContainer.width : defaultOpt.messageContainer.width
+            defaultOpt.messageContainer.alignment = newOpt.messageContainer.alignment ? newOpt.messageContainer.alignment : defaultOpt.messageContainer.alignment
+            defaultOpt.messageContainer.textAlign = newOpt.messageContainer.textAlign ? newOpt.messageContainer.textAlign : defaultOpt.messageContainer.textAlign
+            defaultOpt.messageContainer.marginTop = newOpt.messageContainer.marginTop ? newOpt.messageContainer.marginTop : defaultOpt.messageContainer.marginTop
         }
     }
 
